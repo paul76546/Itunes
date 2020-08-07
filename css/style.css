@@ -1,0 +1,242 @@
+body {
+background: #010001;
+color: #fff;
+margin: 0;
+padding-top: 53px;
+font-family: 'Roboto', sans-serif;
+}
+
+.header {
+ 
+  max-width: 1230px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+.list {
+
+margin: 0;
+padding: 0;
+display: flex;
+list-style: none; 
+}
+
+.item-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.secondary-nav.item-link{
+  color: 808080;
+}
+
+/*разместить текст класса .main по центру*/
+.main {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 30px;
+
+}
+
+
+
+.title{
+  margin-top: 0px;/*отступ вверх обнуляем*/
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  margin-bottom: 26px;/*отступ вниз*/
+}
+
+.description {
+
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+max-width: 268px;
+margin: auto;/*выравниваем по ценру*/
+
+}
+
+/*добавляем вертикальную линию*/
+.description:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  background-color: #fff;
+  margin:auto;/*выравниваем по ценру*/
+  margin-top: 26px;
+}
+
+.video {
+  height: 750px;
+
+  max-width: 1230px;
+  width: 80%;
+  margin: auto;
+}
+
+.features {
+  max-width: 1230px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  padding: 100px 0;
+  margin-top: 100px;
+  position: relative;
+}
+.features-title {
+  
+font-weight: bold;
+font-size: 24px;
+line-height: 140%;
+text-transform: uppercase;
+margin-bottom: 45px;
+}
+
+.table {
+  margin-bottom: 200px;
+}
+
+.table-column {
+  width: 300px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 179.69%;
+  /* or 32px */
+}
+.features-text {
+  max-width: 490px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+
+.rocket {
+  position: absolute;
+top: 100px;
+right: 0;
+z-index: 99;
+max-width: 300px;
+}
+.footer {
+  padding: 130px 0;/*отступ сверху и снизу 130px и по краям 0*/
+  display: flex;/*выстраиваем все элементы в одну строчку*/
+  flex-direction: column;/*выстриваем в колонку*/
+  align-items: center;/*выравниваем по центру*/
+
+}
+.footer-nav .item-link {
+  font-size: 18px;
+  line-height: 21px;
+}
+.footer .logo {
+  margin-bottom: 43px;
+  
+}
+.footer-nav {
+  margin-bottom: 28px;/*отступ снизу*/
+}
+.footer-text {
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+color: #808080;
+/*убираем подчеркивание снизу*/
+text-decoration: none;
+margin-bottom: 30px;
+margin-top: 0;
+}
+.footer-link {
+color: #808080;
+/*убираем подчеркивание снизу*/
+text-decoration: none;
+}
+.button {
+  color: #fff;
+  min-width: 260px;/*минимальная ширина*/
+  padding: 20px;/*отступы внутри*/
+  text-align: center;/*выравниваем по центру*/
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-decoration: none;
+}
+@media (max-width: 960px) {
+ .rocet {
+   max-width: 230px;
+ }
+ .table-colum {
+   width: 250px;
+ }
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .logo {
+    margin-bottom: 20px;
+  }
+  .header .main-nav {
+    margin-bottom: 20px;
+  }
+  .rocket {
+    max-width: 180px;
+  }
+  .video {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .rocet {
+    position: static;
+    margin-bottom: 30px;
+  }
+  .table {
+    margin-bottom: 0;
+  }
+  .table-column {
+    font-size: 14px;
+    width: 150px;
+
+  }
+  .footer-nav .list {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }  
+  .footer-nav .item {
+    margin-bottom: 10px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .main {
+    padding-top :50px;
+  }
+  .features {
+    padding-bottom: 0;
+  }
+}
+
+
+
+
+
